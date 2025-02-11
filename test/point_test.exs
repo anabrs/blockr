@@ -1,6 +1,10 @@
 defmodule PointTest do
   use ExUnit.Case
 
+  test "new point" do
+    assert Point.new(5, 6) == {5, 6}
+  end
+
   test "move point down" do
     assert Point.move_down({5, 6}) == {6, 6}
   end
